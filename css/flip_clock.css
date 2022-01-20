@@ -1,0 +1,67 @@
+@import url('style.css');
+
+.flip_clock_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: 700;
+    color: var(--secondaryColor);
+}
+
+.flip_clock_container * {
+    cursor: default;
+    box-sizing: border-box;
+}
+
+.flip_clock {
+    font-size: 2.5em;
+    height: 2em;
+}
+
+.time_convention {
+    font-size: 1.5em;
+    height: 1.5em;
+}
+
+.flip_clock, .time_convention {
+    width: 2em;
+    line-height: 0em;
+    border-radius: 0.25em;
+    margin: 0em 0.25em;
+    background-color: var(--primaryColor);
+    box-shadow: 0em 0.15em var(--tertiaryColor);
+    position: relative;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+
+.card.flipped {
+    transform: rotateX(-180deg);
+    backface-visibility: hidden;
+}
+
+.card_face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+
+.card_face_back {
+    transform: rotateX(-180deg);
+}
+
+.look {
+    margin-top: 5em;
+}

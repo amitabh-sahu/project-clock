@@ -1,0 +1,182 @@
+@import url('style.css');
+
+.analog_clock_container {
+    position: relative;
+    min-width: 15em;
+    min-height: 15em;
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    background-color: var(--tertiaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock_shadow {
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    top: 50%;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    transform: rotate(-45deg);
+    transform-origin: 50% 0%;
+    z-index: -1;
+}
+
+.clock {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    border-radius: inherit;
+    background-color: var(--primaryColor);
+}
+
+.num {
+    position: absolute;
+    height: 50%;
+    left: 50%;
+    top: 50%;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--secondaryColor);
+}
+
+.num1 {
+    transform: translate(-50%, -100%) rotate(30deg);
+    transform-origin: 50% 100%;
+}
+.num1 > div {
+    transform: rotate(-30deg);
+}
+
+.num2 {
+    transform: translate(-50%, -100%) rotate(60deg);
+    transform-origin: 50% 100%;
+}
+.num2 > div {
+    transform: rotate(-60deg);
+}
+
+.num3 {
+    transform: translate(-50%, -100%) rotate(90deg);
+    transform-origin: 50% 100%;
+}
+.num3 > div {
+    transform: rotate(-90deg);
+}
+
+.num4 {
+    transform: translate(-50%, -100%) rotate(120deg);
+    transform-origin: 50% 100%;
+}
+.num4 > div {
+    transform: rotate(-120deg);
+}
+
+.num5 {
+    transform: translate(-50%, -100%) rotate(150deg);
+    transform-origin: 50% 100%;
+}
+.num5 > div {
+    transform: rotate(-150deg);
+}
+
+.num6 {
+    transform: translate(-50%, -100%) rotate(180deg);
+    transform-origin: 50% 100%;
+}
+.num6 > div {
+    transform: rotate(-180deg);
+}
+
+.num7 {
+    transform: translate(-50%, -100%) rotate(210deg);
+    transform-origin: 50% 100%;
+}
+.num7 > div {
+    transform: rotate(-210deg);
+}
+
+.num8 {
+    transform: translate(-50%, -100%) rotate(240deg);
+    transform-origin: 50% 100%;
+}
+.num8 > div {
+    transform: rotate(-240deg);
+}
+
+.num9 {
+    transform: translate(-50%, -100%) rotate(270deg);
+    transform-origin: 50% 100%;
+}
+.num9 > div {
+    transform: rotate(-270deg);
+}
+
+.num10 {
+    transform: translate(-50%, -100%) rotate(300deg);
+    transform-origin: 50% 100%;
+}
+.num10 > div {
+    transform: rotate(-300deg);
+}
+
+.num11 {
+    transform: translate(-50%, -100%) rotate(330deg);
+    transform-origin: 50% 100%;
+}
+.num11 > div {
+    transform: rotate(-330deg);
+}
+
+.num12 {
+    transform: translate(-50%, -100%) rotate(360deg);
+    transform-origin: 50% 100%;
+}
+.num12 > div {
+    transform: rotate(-360deg);
+}
+
+.needles {
+    position: absolute;
+    height: 2%;
+    top: 49%;
+    right: 50%;
+    background-color: var(--secondaryColor);
+    border-radius: 50% 0% 0% 50%;
+    transform-origin: 100% 50%;
+    transition: all 0.05s cubic-bezier(0, 0, 0.52, 2.51) 0s;
+}
+
+.needle_sec {
+    width: 45%;
+    height: 1%;
+    top: 49.5%;
+    opacity: 0.5;
+}
+
+.needle_min {
+    width: 35%;
+    opacity: 0.7;
+}
+
+.needle_hr {
+    width: 25%;
+    opacity: 0.9;
+}
+
+.needles_cap {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    top: 47.5%;
+    left: 47.5%;
+    background-color: var(--secondaryColor);
+    border-radius: 50%;
+}
+
+.look {
+    margin-top: 2.5em;
+}

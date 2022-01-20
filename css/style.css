@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    min-width: 280px;
+    min-height: 280px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff);
+    background-color: var(--bgColor);
+    font-size: clamp(1rem, 0.5rem + 2.15vmin, 2rem);
+    overflow: hidden;
+}
+
+:root {
+    --ff: 'Noto Sans HK', sans-serif;
+    --bgColor: #34243c;
+    --primaryColor: #34334c;
+    --secondaryColor: #dd567a;
+    --tertiaryColor: #221c2c;
+}
+
+.look {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--secondaryColor);
+    text-shadow: 0em 0.25em var(--tertiaryColor);
+}
+
+.look:hover {
+    transform: scale(1.2);
+}
